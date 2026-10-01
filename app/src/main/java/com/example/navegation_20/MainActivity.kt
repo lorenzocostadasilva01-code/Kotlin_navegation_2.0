@@ -19,8 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Navegation_20Theme {
-
-
+                TelaPrincipal()
             }
         }
     }
