@@ -11,18 +11,18 @@ import androidx.compose.runtime.setValue
 
 
 @Composable
-fun AbaHome(){
+fun AbaHome(viewModel: MeuViewModel) {
 
     var contador by remember { mutableStateOf(0) }
 
     Column() {
-        Text("Home - $contador")
-        Button(onClick = { contador++ }) {
+        Text("Home - ${ viewModel.contador}")
+        Button(onClick = { viewModel.add()}) {
             Text("ADD")
         }
     }
 }
 @Composable
-fun AbaPerfil(){
+fun AbaPerfil(viewModel: MeuViewModel) {
     Text("PERFIL")
 }
